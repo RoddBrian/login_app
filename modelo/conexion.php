@@ -11,11 +11,12 @@ $database = 'RECKONNT_SYS';
 
 // $conexion = new mysqli($server, $user, $password, $database);
 
-// if ($conexion->connect_errno) {
-//     printf("Connect failed: %s\n", $conexion->connect_error);
-echo 'Success test'.$user.$password.$server.$database;
-//     exit();
-// } 
+if ($conexion->connect_errno) {
+    echo "Connect failed: %s\n", $conexion->connect_error;
+    // exit();
+} else {
+    echo "Connect";
+}
 // else {
 //     printf("Connected");
 // }
