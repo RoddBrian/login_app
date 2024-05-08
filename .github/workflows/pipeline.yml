@@ -17,4 +17,4 @@ jobs:
       uses: bervProject/railway-deploy@main
       with:
         railway_token: ${{ secrets.RAILWAY_TOKEN }}
-        service: "e6b64d8f-f639-403f-8462-a34a19864a42"
+        service: "e1b8ce4d-2c4c-4e96-9e53-dee5b6700070"
