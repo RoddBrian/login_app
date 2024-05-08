@@ -63,9 +63,10 @@ function createUser(){
         body: JSON.stringify(data)
         })
         .then(response => {
-            return response.json();
+            return response.text();
         })
         .then(data => {
+            console.log(data);
             let bg_alert = data.result ? '#24c59f' : '#c13f3f';
             data.result ? hideSignup() : showSignup();
             $.toast({
