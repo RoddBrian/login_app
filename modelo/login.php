@@ -39,7 +39,7 @@ switch ($_GET["op"]) {
             if ($result) {
                 echo json_encode(['result' => true, 'detail' => 'New user successfully inserted']);
             } else {
-                echo json_encode(['result' => false, 'detail' => 'Error inserting new user: ' . $conexion->error]);
+                echo json_encode(['result' => false, 'detail' => 'Error inserting new user']);
             }
             $stmt->close();
         } else {
