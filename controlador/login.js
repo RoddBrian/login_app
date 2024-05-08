@@ -1,4 +1,3 @@
-validateConexion();
 $('.log-in').on('click', validateAccess);
 $('.sign-up').on('click', createUser);
 $('.sign-up-ref').on('click', showSignup);
@@ -108,15 +107,4 @@ function hideSignup(){
     $('.form-sign-up').hide();
     $('#form-log-in')[0].reset();
     $('#form-sign-up')[0].reset();
-}
-
-function validateConexion(){
-    console.log('get');
-    fetch('modelo/login.php?ind=1', {
-        method: 'GET'
-    })
-    .then(response => response.text())
-    .then(data => console.log(data))
-    .catch(error => console.error('Error:', error));
-    
 }

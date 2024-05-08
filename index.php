@@ -9,9 +9,6 @@
 <body>
     <div class="form-container">
         <div class="form-log-in">
-            <?php
-                echo 'PHP está funcionando!';
-            ?>
             <p class="title">Welcome back</p>
             <form class="form" id="form-log-in">
                 <input type="text" class="input txtUsername" placeholder="Username">
