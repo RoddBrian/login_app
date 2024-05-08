@@ -32,13 +32,15 @@ switch ($_GET["op"]) {
     case "createUser":
         $data = json_decode(file_get_contents("php://input"), true);
         if (!empty($data["username"]) || !empty($data["password"])) {
-            $query = "INSERT INTO USERS (USER_NAME, USER_PASSWORD) VALUES (?, ?)";
-            $stmt = $conexion->prepare($query);
-            $stmt->bind_param("ss", $data["username"], $data["password"]);
-            $result = $stmt->execute();
-            if ($result) {
-                echo json_encode(['result' => true, 'detail' => 'New user successfully inserted']);
-            } else {
+            try {
+                $query = "INSERT INTO USERS (USER_NAME, USER_PASSWORD) VALUES (?, ?)";
+                $stmt = $conexion->prepare($query);
+                $stmt->bind_param("ss", $data["username"], $data["password"]);
+                $result = $stmt->execute();
+                if ($result) {
+                    echo json_encode(['result' => true, 'detail' => 'New user successfully inserted']);
+                } 
+            } catch (\Throwable $th) {
                 echo json_encode(['result' => false, 'detail' => 'Error inserting new user']);
             }
             $stmt->close();
