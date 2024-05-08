@@ -16,10 +16,10 @@ function validateAccess(){
         body: JSON.stringify(data)
         })
         .then(response => {
-            return response.text();
+            return response.json();
         })
         .then(data => {
-            console.log(data[0])
+            console.log(data)
             if(data.result){
                 window.location.href = "welcome.html";
             }else{
