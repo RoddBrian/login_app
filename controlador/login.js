@@ -19,7 +19,7 @@ function validateAccess(){
             return response.text();
         })
         .then(data => {
-            console.log(data.result)
+            console.log(data[0])
             if(data.result){
                 window.location.href = "welcome.html";
             }else{
