@@ -109,7 +109,7 @@
 
 </html>
 
-<script src="./controlador/login.js?op=v00031"></script>
+<script src="./controlador/login.js?op=v00032"></script>
 
 <style>
     body {
