@@ -19,7 +19,6 @@ function validateAccess(){
             return response.json();
         })
         .then(data => {
-            console.log(data)
             if(data.result){
                 window.location.href = "welcome.html";
             }else{
@@ -77,7 +76,7 @@ function createUser(){
                 bgColor: bg_alert,
                 loaderBg: '#FFFFFF',
                 allowToastClose: true,
-                position: 'top-right',
+                position: 'bottom-right',
                 stack: false
             });
         })
