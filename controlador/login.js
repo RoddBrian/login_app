@@ -30,7 +30,7 @@ function validateAccess(){
                     bgColor: '#c13f3f',
                     loaderBg: '#FFFFFF',
                     allowToastClose: true,
-                    position: 'top-right',
+                    position: 'bottom-right',
                     stack: false
                 });
             }
@@ -44,7 +44,7 @@ function validateAccess(){
                 bgColor: '#c13f3f',
                 loaderBg: '#FFFFFF',
                 allowToastClose: true,
-                position: 'top-right',
+                position: 'bottom-right',
                 stack: false
             });
         });
@@ -89,7 +89,7 @@ function createUser(){
                 bgColor: '#c13f3f',
                 loaderBg: '#FFFFFF',
                 allowToastClose: true,
-                position: 'top-right',
+                position: 'bottom-right',
                 stack: false
             });
         });
