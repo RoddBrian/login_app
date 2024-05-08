@@ -1,9 +1,4 @@
 <?php
-// $user = getenv('DB_USER');
-// $password = getenv('DB_PASS');
-// $server = getenv('DB_HOST');
-// $database = getenv('DB_NAME');
-
 $user = 'admin';
 $password = 'PbwWtbnbBqxkTaB75KKH';
 $server = 'db-reckonnt-of.cdzyvaae9voe.us-east-1.rds.amazonaws.com';
@@ -13,13 +8,8 @@ $conexion = new mysqli($server, $user, $password, $database);
 
 if ($conexion->connect_errno) {
     echo "Connect failed: %s\n", $conexion->connect_error;
-    // exit();
-} else {
-    echo "Connect";
-}
-// else {
-//     printf("Connected");
-// }
+    exit();
+} 
 
-// $conexion->set_charset("utf8");
+$conexion->set_charset("utf8");
 ?>
