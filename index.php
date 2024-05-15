@@ -9,7 +9,7 @@
 <body>
     <div class="form-container">
         <div class="form-log-in">
-            <p class="title">Welcome back</p>
+            <p class="title">Welcome back!</p>
             <form class="form" id="form-log-in">
                 <input type="text" class="input txtUsername" placeholder="Username">
                 <input type="password" class="input txtPassword" placeholder="Password">
