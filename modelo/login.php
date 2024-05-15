@@ -49,6 +49,11 @@ switch ($_GET["op"]) {
         }
 
         break;
+
+    case "API":
+        echo json_encode(['result' => false, 'detail' => 'Username or password not provided']);
+
+        break;
 }
 
 ?>
